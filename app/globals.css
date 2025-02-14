@@ -34,3 +34,148 @@
     border-radius: 2px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+@keyframes loading-bar {
+  0% { width: 0; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 1s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+
+
+.wrapper-class {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.editor-class {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.toolbar-class {
+  border: 1px solid #ccc;
+}
+
+.rdw-option-wrapper {
+  border: 1px solid #F1F1F1;
+  padding: 5px;
+  min-width: 25px;
+  height: 20px;
+  border-radius: 2px;
+  margin: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+  text-transform: capitalize;
+}
+
+.rdw-dropdown-wrapper {
+  height: 30px;
+  background: white;
+  cursor: pointer;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  margin: 0 4px;
+  text-transform: capitalize;
+  background: white;
+}
+
+.rdw-dropdown-optionwrapper {
+  box-shadow: rgba(0,0,0,0.1) 0 0 5px 0;
+  border: 1px solid #F1F1F1;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  margin-top: 5px;
+  z-index: 100;
+}
+
+
+.editor-container {
+  @apply bg-white rounded-lg border border-gray-200;
+}
+
+.editor-inner {
+  @apply p-4;
+}
+
+.editor-input {
+  @apply min-h-[200px] outline-none;
+}
+
+.editor-placeholder {
+  @apply text-gray-400 absolute top-4 left-4 pointer-events-none;
+}
+
+.toolbar {
+  @apply flex flex-wrap items-center gap-2 p-2 border-b border-gray-200;
+}
+
+/* Editor Content Styles */
+.editor-input h1 {
+  @apply text-4xl font-bold mb-4;
+}
+
+.editor-input h2 {
+  @apply text-3xl font-bold mb-3;
+}
+
+.editor-input h3 {
+  @apply text-2xl font-bold mb-2;
+}
+
+.editor-input h4 {
+  @apply text-xl font-bold mb-2;
+}
+
+.editor-input h5 {
+  @apply text-lg font-bold mb-2;
+}
+
+.editor-input h6 {
+  @apply text-base font-bold mb-2;
+}
+
+.editor-input p {
+  @apply mb-4;
+}
+
+.editor-input ul {
+  @apply list-disc ml-6 mb-4;
+}
+
+.editor-input ol {
+  @apply list-decimal ml-6 mb-4;
+}
+
+.editor-input blockquote {
+  @apply border-l-4 border-gray-200 pl-4 italic my-4;
+}
+
+.editor-input a {
+  @apply text-blue-600 hover:underline;
+}
